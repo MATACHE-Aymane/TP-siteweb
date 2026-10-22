@@ -1,0 +1,222 @@
+
+body{
+    background-color: #050505;
+}
+/* nav */
+nav{
+    background-color: #D8B568;
+}
+.dropdown-menu{
+    background-color: #D8B568;
+}
+/* 1 ET 2 PAGE - RESPONSIVE */
+.presentation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #030000;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+/* Images on both pages */
+.presentation img {
+    display: block;
+    width: 40%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+/* Home page text */
+.text,
+.propos1 {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Titles */
+.presentation h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #D8B568;
+}
+
+/* Paragraphs */
+.presentation p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #f7f3f3;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+/* Tablets and mobile phones */
+@media screen and (max-width: 768px) {
+    .presentation {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .presentation img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 350px;
+        object-fit: contain;
+    }
+
+    .text,
+    .propos1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .presentation h1 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .presentation p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        text-align: left;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 400px) {
+    .presentation {
+        padding: 12px;
+        gap: 15px;
+    }
+
+    .presentation h1 {
+        font-size: 1.3rem;
+    }
+
+    .presentation p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
+/* Entretien */
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #D8B568;
+
+}
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #003D28;
+}
+.form{
+    background-image: url('../img/image10.webp');
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center center;
+    background-attachment: fixed;
+} 
+.btn-rolex{
+    background-color: #003D28;
+    color: white;
+}
+ 
+
+/* FOOTER */
+.rolex-footer {
+    background-color: #003D28;
+    color: #FFFFFF;
+    padding: 45px 0 15px;
+    font-family: Georgia, serif;
+    border-top: 3px solid #C6A45C;
+}
+
+.footer-logo {
+    color: #D8B568;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.rolex-footer h4 {
+    color: #D8B568;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.rolex-footer p {
+    color: #D9E2DC;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.rolex-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rolex-footer ul li {
+    margin-bottom: 10px;
+}
+
+.rolex-footer a {
+    color: #E5EAE6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.rolex-footer a:hover {
+    color: #D8B568;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 25px 0;
+    margin-top: 25px;
+    border-top: 1px solid #547365;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #547365;
+}
+
+.footer-bottom p {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.rolex-footer .gold-text {
+    color: #D8B568;
+}
+
+@media (max-width: 768px) {
+    .rolex-footer {
+        padding: 35px 20px 15px;
+    }
+
+    .social-links {
+        gap: 15px;
+    }
+}
+
