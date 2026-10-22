@@ -9,37 +9,46 @@ nav{
 .dropdown-menu{
     background-color: #D8B568;
 }
-/* Navigation sur téléphone */
+
 nav.navbar {
+    display: flex;
     width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 8px 0;
     box-sizing: border-box;
-    background-color: #D8B568;
 }
 
 nav.navbar .container-fluid {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 575.98px) {
-    nav.navbar {
-        width: 100%;
-        margin: 0;
-        padding: 8px 0;
-    }
-
+@media (max-width: 767.98px) {
     nav.navbar .navbar-collapse {
-        width: 100%;
         flex-basis: 100%;
+        width: 100%;
     }
 
     nav.navbar .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav.navbar .nav-item {
         width: 100%;
     }
 
     nav.navbar .nav-link {
-        padding: 10px 5px;
+        display: block;
+        padding: 12px 10px;
+    }
+
+    nav.navbar .dropdown-menu {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 /* 1 ET 2 PAGE - RESPONSIVE */
