@@ -9,47 +9,106 @@ nav{
 .dropdown-menu{
     background-color: #D8B568;
 }
-/* 1 ET 2 PAGE */
+/* 1 ET 2 PAGE - RESPONSIVE */
 .presentation {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
-    text-align: center;
-    max-width: 100%;
+    justify-content: center;
     width: 90%;
+    max-width: 1200px;
     margin: 40px auto;
-    background-color: #030000; 
-    text-align: center;
-    gap: 20px;
+    padding: 20px;
+    background-color: #030000;
+    gap: 30px;
+    box-sizing: border-box;
 }
 
-.text {
-    display: flex;
-    flex-direction: column;
-}
-
-
-#pre {
+/* Images on both pages */
+.presentation img {
+    display: block;
+    width: 40%;
     max-width: 350px;
     height: auto;
-    display: block;
-    margin-bottom: 20px;
+    object-fit: cover;
     border-radius: 8px;
+    margin: 0 auto;
 }
 
+/* Home page text */
+.text,
+.propos1 {
+    flex: 1;
+    min-width: 0;
+}
 
+/* Titles */
 .presentation h1 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #D8B568;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #D8B568;
 }
 
-
+/* Paragraphs */
 .presentation p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #f7f3f3;
-  text-align: center;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #f7f3f3;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+/* Tablets and mobile phones */
+@media screen and (max-width: 768px) {
+    .presentation {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .presentation img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 350px;
+        object-fit: contain;
+    }
+
+    .text,
+    .propos1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .presentation h1 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .presentation p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        text-align: left;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 400px) {
+    .presentation {
+        padding: 12px;
+        gap: 15px;
+    }
+
+    .presentation h1 {
+        font-size: 1.3rem;
+    }
+
+    .presentation p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
 }
 /* Entretien */
 
