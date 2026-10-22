@@ -9,6 +9,39 @@ nav{
 .dropdown-menu{
     background-color: #D8B568;
 }
+/* Navigation sur téléphone */
+nav.navbar {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #D8B568;
+}
+
+nav.navbar .container-fluid {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 575.98px) {
+    nav.navbar {
+        width: 100%;
+        margin: 0;
+        padding: 8px 0;
+    }
+
+    nav.navbar .navbar-collapse {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    nav.navbar .navbar-nav {
+        width: 100%;
+    }
+
+    nav.navbar .nav-link {
+        padding: 10px 5px;
+    }
+}
 /* 1 ET 2 PAGE - RESPONSIVE */
 .presentation {
     display: flex;
